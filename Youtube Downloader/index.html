@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <style>
+      .button {
+        background-color: none;
+        border: none;
+        color: #686de0;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-family: sans-serif;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #36A9E1;
+      }
+
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+      }
+
+      .search-box {
+        border: 2px solid #686de0;
+        border-radius: 4px;
+        width: 70%;
+        height: 40px;
+        font-size: 16px;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1>YouTube Video Downloader</h1>
+      <form method="post" action="/download">
+        <label for="url">Enter the URL of the YouTube video:</label><br>
+        <input class="search-box" type="text" id="url" name="url"><br>
+        <input class="button" type="submit" value="Download">
+      </form>
+    </div>
+  </body>
+</html>
