@@ -22,6 +22,7 @@ def download():
     audio_stream = video.streams.filter(only_audio=True).first()
 
     # Download the video and audio streams
+    # 'C:/Users/User/Downloads') where Users = your username or name
     video_stream.download(output_path='C:/Users/User/Downloads')
     audio_stream.download(output_path='C:/Users/User/Downloads')
 
